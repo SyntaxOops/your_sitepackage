@@ -11,9 +11,9 @@
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name": "SyntaxOops",
-            "homepage": "https://github.com/SyntaxOops",
-            "role": "Developer"
+            "name": "Haythem Daoud",
+            "role": "Senior TYPO3 Backend Developer",
+            "email": "hello@haythemdaoud.dev"
         }
     ],
     "support": {
@@ -43,7 +43,7 @@
     "extra": {
         "typo3/cms": {
             "extension-key": "your_sitepackage",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "Package": {
                 "providesPackages": {}
             }
