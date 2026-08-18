@@ -1,0 +1,42 @@
+categories:
+  YourSitepackage:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.category'
+  YourSitepackage.templates:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.category.templates'
+    parent: YourSitepackage
+  YourSitepackage.branding:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.category.branding'
+    parent: YourSitepackage
+
+settings:
+  YourSitepackage.templatePath:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.templatePath.label'
+    description: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.templatePath.description'
+    category: YourSitepackage.templates
+    type: string
+    default: 'EXT:your_sitepackage/Resources/Private/Templates/'
+
+  YourSitepackage.logo:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.logo.label'
+    description: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.logo.description'
+    category: YourSitepackage.branding
+    type: string
+    default: 'EXT:your_sitepackage/Resources/Public/Images/logo.svg'
+
+  YourSitepackage.logoAlt:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.logoAlt.label'
+    category: YourSitepackage.branding
+    type: string
+    default: 'Home'
+
+  YourSitepackage.favicon:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.favicon.label'
+    category: YourSitepackage.branding
+    type: string
+    default: 'EXT:your_sitepackage/Resources/Public/Icons/favicon.svg'
+
+  YourSitepackage.contactEmail:
+    label: 'LLL:EXT:your_sitepackage/Resources/Private/Language/locallang.xlf:settings.contactEmail.label'
+    category: YourSitepackage.branding
+    type: string
+    default: ''

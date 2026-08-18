@@ -1,0 +1,19 @@
+page = PAGE
+page {
+    typeNum = 0
+
+    10 = PAGEVIEW
+    10 {
+        paths {
+            10 = EXT:your_sitepackage/Resources/Private/Templates/
+            100 = {$YourSitepackage.templatePath}
+        }
+
+        dataProcessing {
+            10 = page-content
+            10.as = content
+        }
+    }
+
+    shortcutIcon = {$YourSitepackage.favicon}
+}

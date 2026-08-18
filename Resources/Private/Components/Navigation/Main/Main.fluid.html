@@ -1,0 +1,33 @@
+<f:argument name="items" type="array" optional="{true}" />
+
+<f:if condition="{items}">
+    <nav class="main-navigation" aria-label="{f:translate(key: 'navigation.main', extensionName: 'YourSitepackage')}">
+        <ul class="main-navigation__list">
+            <f:for each="{items}" as="item">
+                <li class="main-navigation__item">
+                    <a
+                        href="{item.link}"
+                        target="{item.target}"
+                        class="main-navigation__link{f:if(condition: item.active, then: ' is-active')}"
+                        aria-current="{f:if(condition: item.current, then: 'page')}"
+                    >{item.title}</a>
+
+                    <f:if condition="{item.children}">
+                        <ul class="main-navigation__sublist">
+                            <f:for each="{item.children}" as="child">
+                                <li>
+                                    <a
+                                        href="{child.link}"
+                                        target="{child.target}"
+                                        class="main-navigation__link{f:if(condition: child.active, then: ' is-active')}"
+                                        aria-current="{f:if(condition: child.current, then: 'page')}"
+                                    >{child.title}</a>
+                                </li>
+                            </f:for>
+                        </ul>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+    </nav>
+</f:if>

@@ -1,0 +1,24 @@
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <site:content.area
+        contentArea="{content.stage}"
+        cssClass="content-area content-area--stage"
+    />
+
+    <main id="main-content" class="page-main page-container page-grid">
+        <site:content.area
+            contentArea="{content.main}"
+            cssClass="content-area content-area--main"
+        />
+        <site:content.area
+            contentArea="{content.sidebar}"
+            cssClass="content-area content-area--sidebar"
+        />
+    </main>
+
+    <site:content.area
+        contentArea="{content.footerContent}"
+        cssClass="content-area content-area--footer"
+    />
+</f:section>

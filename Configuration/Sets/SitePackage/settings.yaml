@@ -1,0 +1,17 @@
+styles:
+  templates:
+    layoutRootPath: 'EXT:your_sitepackage/Resources/Private/ContentElements/Layouts'
+    partialRootPath: 'EXT:your_sitepackage/Resources/Private/ContentElements/Partials'
+    templateRootPath: 'EXT:your_sitepackage/Resources/Private/ContentElements/Templates'
+  content:
+    textmedia:
+      maxW: 1600
+      maxWInText: 800
+      linkWrap:
+        lightboxEnabled: true
+        lightboxCssClass: lightbox
+
+felogin:
+  pid: '0'
+  recursive: '0'
+  showForgotPassword: true

@@ -1,0 +1,27 @@
+name: syntaxoops/hero
+typeName: your_sitepackage_hero
+group: your_sitepackage
+prefixFields: true
+prefixType: full
+priority: 100
+basics:
+  - TYPO3/Appearance
+fields:
+  - identifier: header
+    useExistingField: true
+
+  - identifier: bodytext
+    useExistingField: true
+    enableRichtext: true
+
+  - identifier: image
+    type: File
+    allowed: common-image-types
+    maxitems: 1
+
+  - identifier: button_text
+    type: Text
+    default: 'Learn more'
+
+  - identifier: button_link
+    type: Link

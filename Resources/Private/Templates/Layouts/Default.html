@@ -1,0 +1,22 @@
+<f:asset.css
+    identifier="your-sitepackage-main"
+    href="EXT:your_sitepackage/Resources/Public/Css/main.css"
+/>
+
+<a class="skip-link" href="#main-content">
+    <f:translate key="accessibility.skipToContent" extensionName="YourSitepackage" />
+</a>
+
+<site:page.header
+    rootPageId="{site.rootPageId}"
+    logo="{settings.YourSitepackage.logo}"
+    logoAlt="{settings.YourSitepackage.logoAlt}"
+    websiteTitle="{site.configuration.websiteTitle}"
+    navigation="{mainNavigation}"
+/>
+<site:navigation.breadcrumb items="{breadcrumb}" />
+<f:render section="Main" />
+<site:page.footer
+    websiteTitle="{site.configuration.websiteTitle}"
+    contactEmail="{settings.YourSitepackage.contactEmail}"
+/>

@@ -1,0 +1,6 @@
+# Preserve the permission boundary of each page-tree branch for newly created pages.
+TCEMAIN.permissions {
+    groupid = copyFromParent
+    group = copyFromParent
+    everybody = copyFromParent
+}

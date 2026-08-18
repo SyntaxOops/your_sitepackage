@@ -1,0 +1,8 @@
+<f:argument name="contentArea" type="TYPO3\CMS\Core\Page\ContentArea" optional="{true}" />
+<f:argument name="cssClass" type="string" />
+
+<f:if condition="{contentArea}">
+    <div class="{cssClass}">
+        <f:render.contentArea contentArea="{contentArea}" />
+    </div>
+</f:if>

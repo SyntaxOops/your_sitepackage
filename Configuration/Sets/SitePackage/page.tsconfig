@@ -1,0 +1,2 @@
+@import './PageTsConfig/*.tsconfig'
+@import './PageTsConfig/BackendLayouts/*.tsconfig'

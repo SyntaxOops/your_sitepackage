@@ -1,0 +1,5 @@
+name: syntaxoops/your-sitepackage
+label: 'Your Site Package'
+dependencies:
+  - typo3/fluid-styled-content-css
+  - typo3/felogin

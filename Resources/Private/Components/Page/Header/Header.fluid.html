@@ -1,0 +1,23 @@
+<f:argument name="rootPageId" type="int" />
+<f:argument name="logo" type="string" />
+<f:argument name="logoAlt" type="string" />
+<f:argument name="websiteTitle" type="string" optional="{true}" default="" />
+<f:argument name="navigation" type="array" optional="{true}" />
+
+<header class="site-header">
+    <div class="page-container site-header__inner">
+        <f:link.page pageUid="{rootPageId}" class="site-brand">
+            <f:image
+                src="{logo}"
+                alt="{logoAlt}"
+                class="site-brand__logo"
+                maxHeight="56"
+            />
+            <f:if condition="{websiteTitle}">
+                <span class="site-brand__title">{websiteTitle}</span>
+            </f:if>
+        </f:link.page>
+
+        <site:navigation.main items="{navigation}" />
+    </div>
+</header>

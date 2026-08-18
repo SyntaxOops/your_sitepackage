@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="labels.xlf" source-language="en" product-name="syntaxoops/hero">
+        <header />
+        <body>
+            <trans-unit id="title">
+                <source>Hero</source>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Prominent introduction with heading, text, image and call to action.</source>
+            </trans-unit>
+            <trans-unit id="button_text.label">
+                <source>Button label</source>
+            </trans-unit>
+            <trans-unit id="button_link.label">
+                <source>Button link</source>
+            </trans-unit>
+            <trans-unit id="image.label">
+                <source>Image</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

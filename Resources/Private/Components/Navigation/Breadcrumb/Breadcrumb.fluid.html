@@ -1,0 +1,20 @@
+<f:argument name="items" type="array" optional="{true}" />
+
+<f:if condition="{items}">
+    <nav class="breadcrumb page-container" aria-label="{f:translate(key: 'navigation.breadcrumb', extensionName: 'YourSitepackage')}">
+        <ol class="breadcrumb__list">
+            <f:for each="{items}" as="item">
+                <li class="breadcrumb__item">
+                    <f:if condition="{item.current}">
+                        <f:then>
+                            <span aria-current="page">{item.title}</span>
+                        </f:then>
+                        <f:else>
+                            <a href="{item.link}" target="{item.target}">{item.title}</a>
+                        </f:else>
+                    </f:if>
+                </li>
+            </f:for>
+        </ol>
+    </nav>
+</f:if>

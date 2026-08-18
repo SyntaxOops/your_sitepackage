@@ -1,0 +1,48 @@
+{
+    "name": "syntaxoops/your-sitepackage",
+    "type": "typo3-cms-extension",
+    "description": "Reusable TYPO3 13 and 14 project backbone with Site Sets, PAGEVIEW templates, Content Blocks and editor defaults",
+    "keywords": [
+        "TYPO3 CMS",
+        "content blocks",
+        "site package"
+    ],
+    "homepage": "https://github.com/SyntaxOops/your_sitepackage",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "SyntaxOops",
+            "homepage": "https://github.com/SyntaxOops",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/SyntaxOops/your_sitepackage/issues",
+        "source": "https://github.com/SyntaxOops/your_sitepackage"
+    },
+    "require": {
+        "php": "^8.2",
+        "friendsoftypo3/content-blocks": "^1.6.3 || ^2.4.8",
+        "typo3/cms-core": "^13.4.34 || ^14.3.6",
+        "typo3/cms-felogin": "^13.4.34 || ^14.3.6",
+        "typo3/cms-fluid": "^13.4.34 || ^14.3.6",
+        "typo3/cms-fluid-styled-content": "^13.4.34 || ^14.3.6",
+        "typo3/cms-frontend": "^13.4.34 || ^14.3.6",
+        "typo3/cms-rte-ckeditor": "^13.4.34 || ^14.3.6",
+        "typo3fluid/fluid": "^4.6.1 || ^5.3.1"
+    },
+    "suggest": {
+        "typo3/cms-form": "Adds the TYPO3 Form Framework for project forms.",
+        "typo3/cms-seo": "Adds canonical URLs, social metadata and XML sitemaps."
+    },
+    "autoload": {
+        "psr-4": {
+            "SyntaxOops\\YourSitepackage\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "your_sitepackage"
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file datatype="plaintext" original="messages" source-language="en" product-name="your_sitepackage">
+        <header />
+        <body>
+            <trans-unit id="accessibility.skipToContent">
+                <source>Skip to main content</source>
+            </trans-unit>
+            <trans-unit id="navigation.main">
+                <source>Main navigation</source>
+            </trans-unit>
+            <trans-unit id="navigation.breadcrumb">
+                <source>Breadcrumb</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.withSidebar">
+                <source>With sidebar</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.area.stage">
+                <source>Stage</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.area.main">
+                <source>Main content</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.area.sidebar">
+                <source>Sidebar</source>
+            </trans-unit>
+            <trans-unit id="backendLayout.area.footer">
+                <source>Footer content</source>
+            </trans-unit>
+            <trans-unit id="contentElement.group">
+                <source>Site package</source>
+            </trans-unit>
+            <trans-unit id="settings.category">
+                <source>Your Site Package</source>
+            </trans-unit>
+            <trans-unit id="settings.category.templates">
+                <source>Templates</source>
+            </trans-unit>
+            <trans-unit id="settings.category.branding">
+                <source>Branding</source>
+            </trans-unit>
+            <trans-unit id="settings.templatePath.label">
+                <source>Page template path</source>
+            </trans-unit>
+            <trans-unit id="settings.templatePath.description">
+                <source>Highest-priority PAGEVIEW template path for project overrides.</source>
+            </trans-unit>
+            <trans-unit id="settings.logo.label">
+                <source>Logo</source>
+            </trans-unit>
+            <trans-unit id="settings.logo.description">
+                <source>EXT: path to the site logo.</source>
+            </trans-unit>
+            <trans-unit id="settings.logoAlt.label">
+                <source>Logo alternative text</source>
+            </trans-unit>
+            <trans-unit id="settings.favicon.label">
+                <source>Favicon</source>
+            </trans-unit>
+            <trans-unit id="settings.contactEmail.label">
+                <source>Contact email</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

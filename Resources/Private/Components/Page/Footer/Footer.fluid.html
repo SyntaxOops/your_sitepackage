@@ -1,0 +1,17 @@
+<f:argument name="websiteTitle" type="string" optional="{true}" default="" />
+<f:argument name="contactEmail" type="string" optional="{true}" default="" />
+
+<footer class="site-footer">
+    <div class="page-container site-footer__inner">
+        <p>
+            &copy; <f:format.date format="Y">now</f:format.date>
+            {websiteTitle}
+        </p>
+
+        <f:if condition="{contactEmail}">
+            <p>
+                <f:link.email email="{contactEmail}">{contactEmail}</f:link.email>
+            </p>
+        </f:if>
+    </div>
+</footer>

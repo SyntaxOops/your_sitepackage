@@ -1,0 +1,14 @@
+<f:layout name="Preview" />
+
+<f:section name="Header">
+    <strong>{data.header}</strong>
+</f:section>
+
+<f:section name="Content">
+    <f:if condition="{data.bodytext}">
+        <p>{data.bodytext -> f:format.stripTags() -> f:format.crop(maxCharacters: 180)}</p>
+    </f:if>
+    <f:if condition="{data.button_link}">
+        <p>{data.button_text} &rarr;</p>
+    </f:if>
+</f:section>

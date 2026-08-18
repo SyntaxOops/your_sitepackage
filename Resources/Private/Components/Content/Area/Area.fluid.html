@@ -1,0 +1,14 @@
+<f:argument name="contentArea" type="mixed" optional="{true}" />
+<f:argument name="cssClass" type="string" />
+
+<f:if condition="{contentArea.records}">
+    <div class="{cssClass}">
+        <f:for each="{contentArea.records}" as="record">
+            <f:cObject
+                typoscriptObjectPath="{record.mainType}"
+                table="{record.mainType}"
+                data="{record}"
+            />
+        </f:for>
+    </div>
+</f:if>

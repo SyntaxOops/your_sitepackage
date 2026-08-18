@@ -1,0 +1,37 @@
+<f:asset.css identifier="your-sitepackage-hero" href="{cb:assetPath()}/frontend.css" />
+
+<section class="hero">
+    <div class="page-container hero__inner">
+        <div class="hero__content">
+            <f:if condition="{data.header}">
+                <h1 class="hero__title">{data.header}</h1>
+            </f:if>
+
+            <f:if condition="{data.bodytext}">
+                <div class="hero__text">
+                    <f:format.html>{data.bodytext}</f:format.html>
+                </div>
+            </f:if>
+
+            <f:if condition="{data.button_link}">
+                <site:atom.button cssClass="hero__action" parameter="{data.button_link}">
+                    {data.button_text}
+                </site:atom.button>
+            </f:if>
+        </div>
+
+        <f:for each="{data.image}" as="image" iteration="imageIterator">
+            <f:if condition="{imageIterator.isFirst}">
+                <figure class="hero__media">
+                    <f:image
+                        image="{image}"
+                        alt="{image.alternative}"
+                        title="{image.title}"
+                        width="960"
+                        loading="eager"
+                    />
+                </figure>
+            </f:if>
+        </f:for>
+    </div>
+</section>
