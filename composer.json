@@ -1,7 +1,7 @@
 {
     "name": "syntaxoops/your-sitepackage",
     "type": "typo3-cms-extension",
-    "description": "Reusable TYPO3 13 and 14 project backbone with Site Sets, PAGEVIEW templates, Content Blocks and editor defaults",
+    "description": "Reusable TYPO3 project backbone",
     "keywords": [
         "TYPO3 CMS",
         "content blocks",

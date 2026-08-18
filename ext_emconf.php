@@ -2,7 +2,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Your Site Package',
-    'description' => 'Reusable TYPO3 project backbone with Site Sets, PAGEVIEW templates and Content Blocks',
+    'description' => 'Reusable TYPO3 project backbone',
     'category' => 'templates',
     'version' => '1.0.0',
     'state' => 'stable',
