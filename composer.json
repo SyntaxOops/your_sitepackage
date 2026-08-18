@@ -42,7 +42,11 @@
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "your_sitepackage"
+            "extension-key": "your_sitepackage",
+            "version": "1.0.0",
+            "Package": {
+                "providesPackages": {}
+            }
         }
     }
 }
